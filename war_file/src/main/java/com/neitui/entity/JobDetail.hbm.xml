@@ -5,8 +5,8 @@
 <hibernate-mapping>
     <class name="com.neitui.entity.JobDetail" >
         <!--hibernate为我们生成主键id-->
-        <id name="id">
-            <generator class="uuid" />
+        <id name="id" type="int">
+            <generator class="identity" />
         </id>
 
         <!--默认把类的变量映射为相同名字的表列，当然我们使用column属性修改表字段-->
@@ -17,9 +17,9 @@
         <property name="completeDate" type="java.util.Date"></property>
         <property name="description" type="java.lang.String" length="4000"></property>
         <property name="briefIntro" type="java.lang.String" length="1000"></property>
-        <set name="keyWords">
+        <!--<set name="keyWords">
             <key column="id"></key>
             <one-to-many class="com.neitui.entity.KeyWord"/>
-        </set>
+        </set>   -->
     </class>
 </hibernate-mapping>

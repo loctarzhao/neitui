@@ -5,8 +5,8 @@
 <hibernate-mapping>
     <class name="com.neitui.entity.KeyWord" >
         <!--hibernate为我们生成主键id-->
-        <id name="id">
-            <generator class="uuid" />
+        <id name="id" type="int">
+            <generator class="identity" />
         </id>
 
         <!--默认把类的变量映射为相同名字的表列，当然我们使用column属性修改表字段-->

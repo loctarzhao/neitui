@@ -14,15 +14,15 @@ public class JobDetail {
     private String description;
     private String briefIntro;
 
-    private List<KeyWord> keyWords;
+//    private List<KeyWord> keyWords;
 
-    public List<KeyWord> getKeyWords() {
-        return keyWords;
-    }
-
-    public void setKeyWords(List<KeyWord> keyWords) {
-        this.keyWords = keyWords;
-    }
+//    public List<KeyWord> getKeyWords() {
+//        return keyWords;
+//    }
+//
+//    public void setKeyWords(List<KeyWord> keyWords) {
+//        this.keyWords = keyWords;
+//    }
 
     public int getId() {
         return id;
